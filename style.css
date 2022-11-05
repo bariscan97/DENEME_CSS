@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    background-color: rgb(39, 33, 33);
+    
+}
+
+.navi{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 50px;
+
+}
+.navi .bas{
+    width:600px;
+   
+}
+.heroes{
+    display: flex;
+    justify-content: space-around;
+    height: 448px;
+    margin-left:50px;
+    margin-top: 250px;
+    
+    
+    
+}
+.resim{
+    height: 75%;
+    position: absolute;
+    
+    
+}
+.box,.box2,.box3{
+    clip-path: circle(50% at 50% 50%);
+    width: 30%;
+    background-color: rgb(130, 19, 19);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    
+    transition: 0.5s;
+    ;
+}
+.logo1,.logo2,.logo3{
+    width: 42%;
+    visibility: hidden;
+    
+}
+.yazi,.yazi2,.yazi3{
+    width: 20%;
+    position: absolute;
+    left:50px;
+    top:50%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.yazi p,.yazi2 p,.yazi3 p{
+    padding-bottom: 30px;
+    visibility: hidden;
+}
+
+.box:hover,.box2:hover,.box3:hover  {
+    width:100%;
+    background-color:  rgb(39, 33, 33);
+    clip-path: none;
+    
+}
+.box:hover .resim,.box2:hover .resim,.box3:hover .resim{
+    transform: scale(1.2);
+}
+.box:hover p,.box:hover .logo1,.box:hover .logo2,.box:hover .logo3,.box2:hover p,.box2:hover .logo1,.box2:hover .logo2,.box2:hover .logo3,.box3:hover p,.box3:hover .logo1,.box3:hover .logo2,.box3:hover .logo3{
+    visibility: visible;
+}
+.yazi2{
+    margin-left:50px;
+}
+.yazi3{
+    margin-left: 36px;
+}
+@media only screen and (max-width: 600px){
+
+.navi .bas{
+    width: 450px;
+    
+}
+.yazim ,.yazim2 ,.yazim3 {
+    display: none;
+}
+.logo1,.logo2,.logo3{
+    width: 100px;
+    
+}
+
+
+.box:hover .yazi,.box:hover .yazi2,.box:hover .yazi3{
+   transform: translateY(-250px);
+    
+}
+.box:hover .yazi{
+    transform: translateY(-280px);
+}
+.yazi{
+    margin-left: -75px;
+}
+.yazi2{
+    top:50%;
+    left: 12%;
+}
+.yazi3{
+    top:50%;
+    left: 24%;
+}
+}
